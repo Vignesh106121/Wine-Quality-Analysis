@@ -47,7 +47,7 @@ The dataset used in this analysis is `winequality_edited.csv`, which contains 64
     import matplotlib.pyplot as plt
     import pandas as pd
 
-    df = pd.read_csv('winequality_edited.csv')
+    df = pd.read_csv('wine_quality.csv')
 
     median = df['alcohol'].median()
     low = df.query('alcohol < {}'.format(median))
@@ -129,11 +129,27 @@ The analysis revealed the following:
 - Wines with lower acidity levels tend to receive slightly higher average ratings, but the differences are minimal.
 
 ## Visualizations
-![Average Quality Ratings by Alcohol Content](images/alcohol_quality.png)
-![Wine Quality for Sugar Content](images/sugar_quality.png)
-![Acidity vs Quality](images/acidity_quality.png)
-![Quality vs Acidity](images/quality_acidity.png)
+Sure, here are the topics of each visualization without the code:
 
----
+1. **Average Quality Ratings by Alcohol Content**
+   - Determine if wines with higher alcohol content receive better ratings.
+   - Calculate the median alcohol content and divide the dataset into low and high alcohol groups.
+   - Compute the mean quality rating for each group.
+   - Create a bar chart to visualize the average quality ratings for low and high alcohol content wines.
 
-You can create and structure the README file on GitHub as described above, including the code snippets, visualizations, and a clear explanation of each analysis step. Make sure to upload the dataset and images used in the visualizations to the repository.
+2. **Wine Quality for Sugar Content**
+   - Determine if sweeter wines (higher residual sugar) receive higher ratings.
+   - Calculate the median residual sugar content and divide the dataset into low and high sugar groups.
+   - Compute the mean quality rating for each group.
+   - Create a bar chart to visualize the average quality ratings for low and high sugar content wines.
+
+3. **Acidity vs Quality**
+   - Determine which level of acidity is associated with the highest average wine quality rating.
+   - Bin the pH values into four categories: High, Moderately High, Medium, and Low.
+   - Compute the mean quality rating for each acidity level.
+   - Create a bar chart to visualize the average quality ratings for each acidity level.
+
+4. **Quality vs Acidity (Scatter Plot)**
+   - Compare the average quality ratings across different acidity levels.
+   - Compute the mean pH value for each acidity level.
+   - Create a scatter plot to visualize the relationship between acidity levels and quality ratings.
