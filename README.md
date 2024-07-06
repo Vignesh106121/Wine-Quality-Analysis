@@ -17,7 +17,7 @@ This project aims to analyze the factors that affect the quality of wine, using 
 Wine quality is influenced by a variety of chemical properties, and understanding these relationships can help winemakers improve their products. This project investigates how alcohol content, residual sugar, and acidity levels correlate with wine quality ratings.
 
 ## Dataset
-The dataset used in this analysis is `winequality_edited.csv`, which contains 6497 samples of red and white wines with 14 attributes:
+The dataset used in this analysis is `wine_quality.csv`, which contains 6497 samples of red and white wines with 14 attributes:
 - Fixed acidity
 - Volatile acidity
 - Citric acid
